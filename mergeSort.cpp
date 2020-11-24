@@ -48,10 +48,10 @@ void mergeSort(int* ar, int first, int last){
     int mid;
     if(first<last)
     {
-    mid=(last+first)/2;
-    mergeSort(ar, first, mid);
-    mergeSort(ar, mid+1, last);
-    merge(ar, first, mid, last);
+        mid=(last+first)/2;
+        mergeSort(ar, first, mid);
+        mergeSort(ar, mid+1, last);
+        merge(ar, first, mid, last);
     }
 }
 
